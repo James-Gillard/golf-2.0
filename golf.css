@@ -351,9 +351,17 @@ nav ul li a {
 
 }
 
-.scorecard button {
-    font-size: 6px;
+.strokes {
+    text-align: center;
+}
 
+#front-nine-button {
+    font-size: 10px;
+
+}
+
+.hidden-column {
+    display: none;
 }
 
 .total {
@@ -361,6 +369,32 @@ nav ul li a {
 }
 
 /* Scorecard End */
+
+/* Password Start */
+
+#password-box {
+    text-align: center;
+    font-size: 30px;
+}
+
+#pswd {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+#pass-submit-button {
+    font-size: 25px;
+    margin: 10px;
+}
+
+/* Password End */
+
+/* Admin Start */
+
+
+
+/* Admin Start */
 
 /* Footer Start */
 
