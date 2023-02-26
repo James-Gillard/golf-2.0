@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golf Scorecard</title>
-    <link rel="stylesheet" href="./golf.css">
-    <link rel="stylesheet" href="./desktop.css">
+    <link rel="stylesheet" href="./css/golf.css">
+    <link rel="stylesheet" href="./css/desktop.css">
 </head>
 <body>
     <header>
@@ -22,8 +22,12 @@
     </div>
 
     <div class="scorecard-heading">
-        <h1>Masters 2023</h1>
-        <h2>Windmill Golf Course</h2>
+        <h1>Masters 2023 - The Windmill</h1>
+        <div>
+            <h2>Enter Handicap:</h2>
+            <input id="scorecard-handicap" type="number" value="28">
+        </div>
+
         <h3>Front 9</h3>
     </div>
 
@@ -44,11 +48,45 @@
                     <td id="hole-number-one">1</td>
                     <td id="hole-one-yards">327</td>
                     <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
+                    <td id="hole-one-si">1</td>
                     <td id="hole-One-strokes">
                         <form>
                             <label for="hole-1">
                                 <select name="St" id="hole-1" class="strokes">
+                                    <option value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                </select>
+                            </label>
+                        </form>
+                    </td>
+                    <td id="hole-one-sf"></td>
+                    <td class="hidden-column" id="stable-one"></td>
+                </tr>
+
+                <tr id="hole-two">
+                    <td id="hole-number-two">2</td>
+                    <td id="hole-two-yards">327</td>
+                    <td id="hole-two-par">4</td>
+                    <td id="hole-two-si">2</td>
+                    <td id="hole-two-strokes">
+                        <form>
+                            <label for="hole-2">
+                                <select name="St" id="hole-2" class="strokes">
                                     <option value=""></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -74,15 +112,15 @@
                     <td class="hidden-column">2</td>
                 </tr>
 
-                <tr id="hole-one">
-                    <td id="hole-number-one">2</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
-                    <td id="hole-One-strokes">
+                <tr id="hole-three">
+                    <td id="hole-number-three">3</td>
+                    <td id="hole-three-yards">327</td>
+                    <td id="hole-three-par">4</td>
+                    <td id="hole-three-si">3</td>
+                    <td id="hole-three-strokes">
                         <form>
-                            <label for="hole-1">
-                                <select name="St" id="hole-1" class="strokes">
+                            <label for="hole-3">
+                                <select name="St" id="hole-3" class="strokes">
                                     <option value=""></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -108,15 +146,15 @@
                     <td class="hidden-column">2</td>
                 </tr>
 
-                <tr id="hole-one">
-                    <td id="hole-number-one">3</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
-                    <td id="hole-One-strokes">
+                <tr id="hole-four">
+                    <td id="hole-number-four">4</td>
+                    <td id="hole-four-yards">327</td>
+                    <td id="hole-four-par">4</td>
+                    <td id="hole-four-si">4</td>
+                    <td id="hole-four-strokes">
                         <form>
-                            <label for="hole-1">
-                                <select name="St" id="hole-1" class="strokes">
+                            <label for="hole-4">
+                                <select name="St" id="hole-4" class="strokes">
                                     <option value=""></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -138,19 +176,19 @@
                             </label>
                         </form>
                     </td>
-                    <td id="hole-one-sf"></td>
+                    <td id="hole-four-sf"></td>
                     <td class="hidden-column">2</td>
                 </tr>
 
-                <tr id="hole-one">
-                    <td id="hole-number-one">4</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
-                    <td id="hole-One-strokes">
+                <tr id="hole-five">
+                    <td id="hole-number-five">5</td>
+                    <td id="hole-five-yards">327</td>
+                    <td id="hole-five-par">4</td>
+                    <td id="hole-five-si">5</td>
+                    <td id="hole-five-strokes">
                         <form>
-                            <label for="hole-1">
-                                <select name="St" id="hole-1" class="strokes">
+                            <label for="hole-5">
+                                <select name="St" id="hole-5" class="strokes">
                                     <option value=""></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -172,19 +210,19 @@
                             </label>
                         </form>
                     </td>
-                    <td id="hole-one-sf"></td>
+                    <td id="hole-five-sf"></td>
                     <td class="hidden-column">2</td>
                 </tr>
 
-                <tr id="hole-one">
-                    <td id="hole-number-one">5</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
-                    <td id="hole-One-strokes">
+                <tr id="hole-six">
+                    <td id="hole-number-six">6</td>
+                    <td id="hole-six-yards">327</td>
+                    <td id="hole-six-par">4</td>
+                    <td id="hole-six-si">6</td>
+                    <td id="hole-six-strokes">
                         <form>
-                            <label for="hole-1">
-                                <select name="St" id="hole-1" class="strokes">
+                            <label for="hole-6">
+                                <select name="St" id="hole-6" class="strokes">
                                     <option value=""></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -206,19 +244,19 @@
                             </label>
                         </form>
                     </td>
-                    <td id="hole-one-sf"></td>
+                    <td id="hole-six-sf"></td>
                     <td class="hidden-column">2</td>
                 </tr>
 
-                <tr id="hole-one">
-                    <td id="hole-number-one">6</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
-                    <td id="hole-One-strokes">
+                <tr id="hole-seven">
+                    <td id="hole-number-seven">7</td>
+                    <td id="hole-seven-yards">327</td>
+                    <td id="hole-seven-par">4</td>
+                    <td id="hole-seven-si">7</td>
+                    <td id="hole-seven-strokes">
                         <form>
-                            <label for="hole-1">
-                                <select name="St" id="hole-1" class="strokes">
+                            <label for="hole-7">
+                                <select name="St" id="hole-7" class="strokes">
                                     <option value=""></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -240,19 +278,19 @@
                             </label>
                         </form>
                     </td>
-                    <td id="hole-one-sf"></td>
+                    <td id="hole-seven-sf"></td>
                     <td class="hidden-column">2</td>
                 </tr>
 
-                <tr id="hole-one">
-                    <td id="hole-number-one">7</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
-                    <td id="hole-One-strokes">
+                <tr id="hole-eight">
+                    <td id="hole-number-eight">8</td>
+                    <td id="hole-eight-yards">327</td>
+                    <td id="hole-eight-par">4</td>
+                    <td id="hole-eight-si">8</td>
+                    <td id="hole-eight-strokes">
                         <form>
-                            <label for="hole-1">
-                                <select name="St" id="hole-1" class="strokes">
+                            <label for="hole-8">
+                                <select name="St" id="hole-8" class="strokes">
                                     <option value=""></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -274,19 +312,19 @@
                             </label>
                         </form>
                     </td>
-                    <td id="hole-one-sf"></td>
+                    <td id="hole-eight-sf"></td>
                     <td class="hidden-column">2</td>
                 </tr>
 
-                <tr id="hole-one">
-                    <td id="hole-number-one">8</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
-                    <td id="hole-One-strokes">
+                <tr id="hole-nine">
+                    <td id="hole-number-nine">9</td>
+                    <td id="hole-nine-yards">327</td>
+                    <td id="hole-nine-par">4</td>
+                    <td id="hole-nine-si">9</td>
+                    <td id="hole-nine-strokes">
                         <form>
-                            <label for="hole-1">
-                                <select name="St" id="hole-1" class="strokes">
+                            <label for="hole-9">
+                                <select name="St" id="hole-9" class="strokes">
                                     <option value=""></option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -308,41 +346,7 @@
                             </label>
                         </form>
                     </td>
-                    <td id="hole-one-sf"></td>
-                    <td class="hidden-column">2</td>
-                </tr>
-
-                <tr id="hole-one">
-                    <td id="hole-number-one">9</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
-                    <td id="hole-One-strokes">
-                        <form>
-                            <label for="hole-1">
-                                <select name="St" id="hole-1" class="strokes">
-                                    <option value=""></option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                </select>
-                            </label>
-                        </form>
-                    </td>
-                    <td id="hole-one-sf"></td>
+                    <td id="hole-nine-sf"></td>
                     <td class="hidden-column">2</td>
                 </tr>
                 
@@ -351,10 +355,20 @@
                     <td><strong></strong></td>
                     <td><strong>37</strong></td>
                     <td><strong>OUT</strong></td>
-                    <td><strong><button id="front-nine-button" onclick="myFunction()">TOTAL</button></strong></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                 </tr>
             </table>
+        </div>
+
+        <div id="button-container">
+            <div class="calculate-button">
+                <button class="calculate" onclick="myFunction()">Total Strokes</button>
+            </div>
+            <div class="calculate-button">
+                <button class="calculate">Calculate Stableford</button>
+            </div>
         </div>
 
         <div class="scorecard-heading">
@@ -641,7 +655,7 @@
                         </form>
                     </td>
                     <td id="hole-one-sf"></td>
-                    <td class="hidden-column">2</td>
+                    <td class="hidden-column"></td>
                 </tr>
 
                 <tr id="hole-one">
@@ -711,8 +725,9 @@
             <p>Contact PGA Senior Designer:<a href="mailto" id="email">James-Gillard@hotmail.com</a></p>  
         </div>
     </footer>
-    <script src="./golf.js">
 
-    </script>
+    <script src="/js/golf.js"></script>
+    <script src="/js/golf_unused.js"></script>
+
 </body>
 </html>
