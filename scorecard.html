@@ -22,7 +22,7 @@
     </div>
 
     <div class="scorecard-heading">
-        <h1>Masters 2023 - The Windmill</h1>
+        <h1>Masters 2023 - Telford Golf Resorts and Spa</h1>
         <div>
             <h2>Enter Handicap:</h2>
             <input id="scorecard-handicap" type="number" value="28">
@@ -46,9 +46,9 @@
 
                 <tr id="hole-one">
                     <td id="hole-number-one">1</td>
-                    <td id="hole-one-yards">327</td>
+                    <td id="hole-one-yards">388</td>
                     <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">1</td>
+                    <td id="hole-one-si">5</td>
                     <td id="hole-One-strokes">
                         <form>
                             <label for="hole-1">
@@ -75,14 +75,14 @@
                         </form>
                     </td>
                     <td id="hole-one-sf"></td>
-                    <td class="hidden-column" id="stable-one"></td>
+                    <td class="hidden-column" id="stable-one">6</td>
                 </tr>
 
                 <tr id="hole-two">
                     <td id="hole-number-two">2</td>
-                    <td id="hole-two-yards">327</td>
-                    <td id="hole-two-par">4</td>
-                    <td id="hole-two-si">2</td>
+                    <td id="hole-two-yards">482</td>
+                    <td id="hole-two-par">5</td>
+                    <td id="hole-two-si">12</td>
                     <td id="hole-two-strokes">
                         <form>
                             <label for="hole-2">
@@ -108,15 +108,15 @@
                             </label>
                         </form>
                     </td>
-                    <td id="hole-one-sf"></td>
+                    <td id="hole-one-sf"><script></script></td>
                     <td class="hidden-column">2</td>
                 </tr>
 
                 <tr id="hole-three">
                     <td id="hole-number-three">3</td>
-                    <td id="hole-three-yards">327</td>
-                    <td id="hole-three-par">4</td>
-                    <td id="hole-three-si">3</td>
+                    <td id="hole-three-yards">160</td>
+                    <td id="hole-three-par">3</td>
+                    <td id="hole-three-si">18</td>
                     <td id="hole-three-strokes">
                         <form>
                             <label for="hole-3">
@@ -148,9 +148,9 @@
 
                 <tr id="hole-four">
                     <td id="hole-number-four">4</td>
-                    <td id="hole-four-yards">327</td>
+                    <td id="hole-four-yards">375</td>
                     <td id="hole-four-par">4</td>
-                    <td id="hole-four-si">4</td>
+                    <td id="hole-four-si">8</td>
                     <td id="hole-four-strokes">
                         <form>
                             <label for="hole-4">
@@ -182,9 +182,9 @@
 
                 <tr id="hole-five">
                     <td id="hole-number-five">5</td>
-                    <td id="hole-five-yards">327</td>
+                    <td id="hole-five-yards">361</td>
                     <td id="hole-five-par">4</td>
-                    <td id="hole-five-si">5</td>
+                    <td id="hole-five-si">11</td>
                     <td id="hole-five-strokes">
                         <form>
                             <label for="hole-5">
@@ -216,9 +216,9 @@
 
                 <tr id="hole-six">
                     <td id="hole-number-six">6</td>
-                    <td id="hole-six-yards">327</td>
-                    <td id="hole-six-par">4</td>
-                    <td id="hole-six-si">6</td>
+                    <td id="hole-six-yards">523</td>
+                    <td id="hole-six-par">5</td>
+                    <td id="hole-six-si">3</td>
                     <td id="hole-six-strokes">
                         <form>
                             <label for="hole-6">
@@ -250,9 +250,9 @@
 
                 <tr id="hole-seven">
                     <td id="hole-number-seven">7</td>
-                    <td id="hole-seven-yards">327</td>
-                    <td id="hole-seven-par">4</td>
-                    <td id="hole-seven-si">7</td>
+                    <td id="hole-seven-yards">173</td>
+                    <td id="hole-seven-par">3</td>
+                    <td id="hole-seven-si">15</td>
                     <td id="hole-seven-strokes">
                         <form>
                             <label for="hole-7">
@@ -284,9 +284,9 @@
 
                 <tr id="hole-eight">
                     <td id="hole-number-eight">8</td>
-                    <td id="hole-eight-yards">327</td>
+                    <td id="hole-eight-yards">373</td>
                     <td id="hole-eight-par">4</td>
-                    <td id="hole-eight-si">8</td>
+                    <td id="hole-eight-si">7</td>
                     <td id="hole-eight-strokes">
                         <form>
                             <label for="hole-8">
@@ -318,9 +318,9 @@
 
                 <tr id="hole-nine">
                     <td id="hole-number-nine">9</td>
-                    <td id="hole-nine-yards">327</td>
+                    <td id="hole-nine-yards">418</td>
                     <td id="hole-nine-par">4</td>
-                    <td id="hole-nine-si">9</td>
+                    <td id="hole-nine-si">1</td>
                     <td id="hole-nine-strokes">
                         <form>
                             <label for="hole-9">
@@ -352,8 +352,8 @@
                 
                 <tr>
                     <td><strong>OUT</strong></td>
-                    <td><strong></strong></td>
-                    <td><strong>37</strong></td>
+                    <td><strong>3253</strong></td>
+                    <td><strong>36</strong></td>
                     <td><strong>OUT</strong></td>
                     <td></td>
                     <td></td>
@@ -367,7 +367,7 @@
                 <button class="calculate" onclick="myFunction()">Total Strokes</button>
             </div>
             <div class="calculate-button">
-                <button class="calculate">Calculate Stableford</button>
+                <button class="calculate" onclick="stableford()">Calculate Stableford</button>
             </div>
         </div>
 
@@ -388,9 +388,9 @@
 
                 <tr id="hole-one">
                     <td id="hole-number-one">10</td>
-                    <td id="hole-one-yards">327</td>
+                    <td id="hole-one-yards">386</td>
                     <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
+                    <td id="hole-one-si">9</td>
                     <td id="hole-One-strokes">
                         <form>
                             <label for="hole-1">
@@ -422,9 +422,9 @@
 
                 <tr id="hole-one">
                     <td id="hole-number-one">11</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
+                    <td id="hole-one-yards">156</td>
+                    <td id="hole-one-par">3</td>
+                    <td id="hole-one-si">17</td>
                     <td id="hole-One-strokes">
                         <form>
                             <label for="hole-1">
@@ -456,9 +456,9 @@
 
                 <tr id="hole-one">
                     <td id="hole-number-one">12</td>
-                    <td id="hole-one-yards">327</td>
+                    <td id="hole-one-yards">391</td>
                     <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
+                    <td id="hole-one-si">13</td>
                     <td id="hole-One-strokes">
                         <form>
                             <label for="hole-1">
@@ -490,9 +490,9 @@
 
                 <tr id="hole-one">
                     <td id="hole-number-one">13</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
+                    <td id="hole-one-yards">506</td>
+                    <td id="hole-one-par">5</td>
+                    <td id="hole-one-si">16</td>
                     <td id="hole-One-strokes">
                         <form>
                             <label for="hole-1">
@@ -524,9 +524,9 @@
 
                 <tr id="hole-one">
                     <td id="hole-number-one">14</td>
-                    <td id="hole-one-yards">327</td>
+                    <td id="hole-one-yards">413</td>
                     <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
+                    <td id="hole-one-si">2</td>
                     <td id="hole-One-strokes">
                         <form>
                             <label for="hole-1">
@@ -558,7 +558,7 @@
 
                 <tr id="hole-one">
                     <td id="hole-number-one">15</td>
-                    <td id="hole-one-yards">327</td>
+                    <td id="hole-one-yards">299</td>
                     <td id="hole-one-par">4</td>
                     <td id="hole-one-si">14</td>
                     <td id="hole-One-strokes">
@@ -592,9 +592,9 @@
 
                 <tr id="hole-one">
                     <td id="hole-number-one">16</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
+                    <td id="hole-one-yards">181</td>
+                    <td id="hole-one-par">3</td>
+                    <td id="hole-one-si">10</td>
                     <td id="hole-One-strokes">
                         <form>
                             <label for="hole-1">
@@ -626,9 +626,9 @@
 
                 <tr id="hole-one">
                     <td id="hole-number-one">17</td>
-                    <td id="hole-one-yards">327</td>
-                    <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
+                    <td id="hole-one-yards">517</td>
+                    <td id="hole-one-par">5</td>
+                    <td id="hole-one-si">4</td>
                     <td id="hole-One-strokes">
                         <form>
                             <label for="hole-1">
@@ -655,14 +655,14 @@
                         </form>
                     </td>
                     <td id="hole-one-sf"></td>
-                    <td class="hidden-column"></td>
+                    <td class="hidden-column">2</td>
                 </tr>
 
                 <tr id="hole-one">
                     <td id="hole-number-one">18</td>
-                    <td id="hole-one-yards">327</td>
+                    <td id="hole-one-yards">352</td>
                     <td id="hole-one-par">4</td>
-                    <td id="hole-one-si">14</td>
+                    <td id="hole-one-si">6</td>
                     <td id="hole-One-strokes">
                         <form>
                             <label for="hole-1">
@@ -694,24 +694,24 @@
                 
                 <tr>
                     <td><strong>IN</strong></td>
-                    <td><strong></strong></td>
-                    <td><strong>37</strong></td>
+                    <td><strong>3201</strong></td>
+                    <td><strong>36</strong></td>
                     <td><strong>IN</strong></td>
                     <td><strong></strong></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td><strong>OUT</strong></td>
-                    <td><strong></strong></td>
-                    <td><strong>37</strong></td>
+                    <td><strong>3253</strong></td>
+                    <td><strong>36</strong></td>
                     <td><strong>OUT</strong></td>
                     <td><strong></strong></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td class="total"><strong>TOTAL</strong></td>
-                    <td><strong></strong></td>
-                    <td><strong>74</strong></td>
+                    <td><strong>6454</strong></td>
+                    <td><strong>72</strong></td>
                     <td class="total"><strong>TOTAL</strong></td>
                     <td><strong></strong></td>
                     <td></td>
